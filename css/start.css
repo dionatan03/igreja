@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+.container h1 {
+    color: #444;
+    max-width: 80%;
+    text-align: center;
+    font-size: 35px;
+    margin: 40px auto 100px auto;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(196, 196, 196);
+    letter-spacing: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+h2 span, p {
+    transition: 0.5s;
+    color: #fdfdfd;
+    text-shadow: 
+
+    0 0  10px #fdfdfd,
+    0 0  20px #fdfdfd,
+    0 0  40px #fdfdfd,
+    0 0  80px #fdfdfd,
+    0 0 120px #fdfdfd,
+    0 0 160px #fdfdfd;
+    display: block;
+}
+
+/*
+    STYLE IN BTN
+*/
+
+.btn-next-page a {
+    position: relative;
+    top: 150px;
+    background-color: #444;
+    color: #fdfdfd;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+.btn-next-page a:hover {
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+
+
+.btn-next-page a::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+
+a span {
+    position: relative;
+    z-index: 1;
+}
+
+a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+a i::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #27282c;
+    border: 2px solid var(--clr);
+    transition: 0.5s;
+}
+
+a:hover i::before {
+    left: 0;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 38px 32px var(--clr);
+}
+
+a i::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #27282c;
+    border: 2px solid var(--clr);
+    transition: 0.5s;
+}
+
+a:hover i::after {
+    left: 100%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: -38px -32px var(--clr);
+}
+
