@@ -165,6 +165,7 @@ header .logo {
   flex-wrap: wrap;
   justify-content: center;
   overflow: auto;
+  padding-bottom: 30px;
 }
 
 .card {
@@ -229,6 +230,59 @@ font-size: 1.1em;
 font-weight: 600;
 border-radius: 5px;
 }
+
+#shepherd {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+#shepherd span {
+  font-size: 0.6em;
+  margin: 10px 0 70px 90px;
+}
+
+#shepherd img {
+  margin: 30px 0 5px 0;
+  width: 150px;
+  height: 190px;
+  border-radius: 100%;
+}
+
+#donation {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#donation .red {
+  color: #AA0000;
+  font-weight: 700;
+}
+
+#donation h2 {
+  margin: 40px 0 10px 0;
+}
+
+#donation p {
+  margin-bottom: 30px;
+  font-size: 1em;
+}
+
+#donation div {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#donation ion-icon {
+  font-size: 40px;
+}
+
+
 
 .copy {
   position: absolute;
