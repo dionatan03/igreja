@@ -11,12 +11,12 @@ body {
 
 :root {
   --black: #333;
-  --white: #fff;
+  --white: #fdfdfd;
 }
 
 .dark {
   --white: #333;
-  --black: #fff;
+  --black: #fdfdfd;
 }
 
 header {
