@@ -101,8 +101,8 @@ header .logo {
   width: 100%;
   height: 100%;
   z-index: 2;
-  user-select:none;
-  mix-blend-mode:lighten;
+  user-select: none;
+  mix-blend-mode: lighten;
 }
 
 .dark .mask {
@@ -216,22 +216,40 @@ header .logo {
 }
 
 .card .details h3 {
- margin-bottom: 10px;
- color: #AA0000;
+  margin-bottom: 10px;
+  color: #aa0000;
 }
 
 .card .details p {
- margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .card .details a {
-background-color: #AA0000;
-color: white;
-text-decoration: none;
-padding: 10px 15px;
-font-size: 1.1em;
-font-weight: 600;
-border-radius: 5px;
+  background-color: #aa0000;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#schedule {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#schedule h2 {
+  margin-bottom: 10px;
+}
+
+#schedule div {
+  margin-bottom: 10px;
+  border: 1px solid var(--black);
+  width: 90%;
 }
 
 #shepherd {
@@ -263,7 +281,7 @@ border-radius: 5px;
 }
 
 .red {
-  color: #AA0000;
+  color: #aa0000;
   font-weight: 700;
 }
 
@@ -284,8 +302,6 @@ border-radius: 5px;
 #donation ion-icon {
   font-size: 40px;
 }
-
-
 
 .copy {
   position: absolute;
