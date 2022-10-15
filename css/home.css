@@ -7,6 +7,7 @@
 
 body {
   overflow: hidden;
+  -webkit-overflow-scrolling: hidden;
 }
 
 :root {
@@ -166,6 +167,7 @@ header .logo {
   flex-wrap: wrap;
   justify-content: center;
   overflow: auto;
+  -webkit-overflow-scrolling: auto;
   padding-bottom: 30px;
 }
 
@@ -291,12 +293,20 @@ header .logo {
 
 #donation p {
   margin-bottom: 30px;
-  font-size: 1em;
+  font-size: 1.1em;
+}
+
+#donation p:nth-last-child(1) {
+  margin-bottom: 30px;
+  font-size: 0.8em;
 }
 
 #donation div {
   margin-bottom: 10px;
-  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #donation ion-icon {
